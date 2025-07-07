@@ -26,7 +26,7 @@ prompt=ChatPromptTemplate.from_messages(
 st.title('Toyo Chat')
 input_text=st.text_input("Enter your question here")
 
-output_parser()
+output_parser = StrOutputParser()
 
 chain=prompt|llm|output_parser
 
