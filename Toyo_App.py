@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 # Load environment variables from .env (optional if you use an API key directly)
 load_dotenv()
-# GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Initialize Gemini LLM
 llm = ChatGoogleGenerativeAI(
@@ -16,7 +16,7 @@ llm = ChatGoogleGenerativeAI(
     max_tokens=None,
     timeout=None,
     max_retries=2,
-    # google_api_key=GOOGLE_API_KEY
+    google_api_key=GOOGLE_API_KEY
 )
 
 # Configure Streamlit page
