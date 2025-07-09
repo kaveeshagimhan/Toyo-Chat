@@ -48,17 +48,30 @@ Built with **Python** and **Streamlit**, this app is designed for simple local u
    venv\Scripts\activate
    ```
 3. **Install dependencies**
+  - streamlit
+  - langchain
+  - langchain-google-genai
+  - python-dotenv
+
    ```bash
    pip install -r requirements.txt
    ```
-4. **Set your Gemini API Key**
+5. **Set your Gemini API Key**
    - Create a .env file:
    ```env
    GOOGLE_API_KEY=your_google_gemini_api_key
    ```
-5. **Run the app**
+6. **Run the app**
    ```bash
    streamlit run Toyo_App.py
    ```
+## 🖼️ Screenshots
+### 💬 Chat Mode
+![Screenshot 2025-07-09 162418](https://github.com/user-attachments/assets/257b8707-2a84-400e-b02e-bad661986f27)
+### 🌐 Translate Mode
+![Screenshot 2025-07-09 162456](https://github.com/user-attachments/assets/fb7aa2a7-1456-4767-beeb-2a720dce4701)
+
+
+
   
 
